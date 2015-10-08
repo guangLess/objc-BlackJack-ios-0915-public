@@ -78,7 +78,7 @@
 
 -(NSString *)description{
     
-    NSMutableString * description = [NSMutableString stringWithFormat:@"name: %@\n cards: %@\n handscore: ?\n ace in hand: ?\n stayed :?\n blackjack : ?\n busted : %lu \n wins : \n losses : %lu", self.name, self.cardsInHand, (unsigned long)self.handscore, self.aceInHand, self.stayed, self.blackjack, self.busted, (unsigned long)self.wins,(unsigned long)self.losses];
+    NSMutableString * description = [NSMutableString stringWithFormat:@"name: %@\n cards: %@\n handscore: %ld\n ace in hand: %ld\n stayed :%ld\n blackjack : %ld\n busted : %ld \n wins : %ld\n losses : %ld", self.name, self.cardsInHand, self.handscore, self.aceInHand, self.stayed, self.blackjack, self.busted, self.wins, self.losses];
     
     return description;
 }
